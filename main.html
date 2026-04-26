@@ -1,16 +1,100 @@
 <!DOCTYPE html>
-
 <html>
-
 <head>
-	<link rel="stylesheet" href="styles.css">
-</head>
+    <title>Shaw's News</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+        }
 
+        /* Header */
+        .header {
+            background: linear-gradient(to right, #001f2f, #003b4f);
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 32px;
+            font-weight: bold;
+        }
+
+        /* Main layout */
+        .container {
+            display: flex;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .card {
+            background-color: white;
+            border-radius: 20px;
+            padding: 20px;
+            flex: 1;
+        }
+
+        .card h2 {
+            text-align: center;
+        }
+
+        /* Left column */
+        .left ul {
+            margin-top: 20px;
+        }
+
+        /* Middle column */
+        .middle {
+            flex: 2;
+            text-align: center;
+        }
+
+        /* Right column */
+        .right img {
+            width: 100%;
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+
+    <!-- Header -->
+    <div class="header">
+        Shaw's News
+    </div>
+
+    <!-- Content -->
+    <div class="container">
+
+        <!-- Left Section -->
+        <div class="card left">
+            <h2>Latest News Articles</h2>
+            <ul>
+                <li>Article 1</li>
+                <li>Article 2</li>
+                <li>Article 3</li>
+            </ul>
+        </div>
+
+        <!-- Middle Section -->
+        <div class="card middle">
+            <h2>Main Article</h2>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                Sed auctor, magna eu fringilla malesuada, ipsum risus eleifend est, 
+                non feugiat quam augue euismod eros. Sed malesuada, magna eu fringilla 
+                malesuada, ipsum risus eleifend est, non feugiat quam augue euismod eros.
+            </p>
+        </div>
+
+        <!-- Right Section -->
+        <div class="card right">
+            <h2>Pictorial News</h2>
+            <img src="https://images.hindustantimes.com/img/2023/01/29/550x309/delhi_rains_1674974112847_1674981888135_1674981888135.jpeg">
+            <img src="https://images.hindustantimes.com/img/2023/01/29/550x309/ADANI-INDIA-GAUTAM-ADANI-0_1675011651023_1675011651023_1675011672003_1675011672003.JPG">
+            <img src="https://images.hindustantimes.com/img/2023/01/29/550x309/FRANCE-REFORM-PENSIONS-31_1675022359706_1675022359706_1675022383851_1675022383851.JPG">
+        </div>
+
+    </div>
 
 </body>
-
 </html>
